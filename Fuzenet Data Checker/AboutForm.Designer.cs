@@ -46,6 +46,7 @@
             this.HenryQuanBox.Size = new System.Drawing.Size(49, 48);
             this.HenryQuanBox.TabIndex = 0;
             this.HenryQuanBox.TabStop = false;
+            this.HenryQuanBox.Click += new System.EventHandler(this.HenryQuanBox_Click);
             // 
             // emailLabel
             // 
@@ -56,6 +57,7 @@
             this.emailLabel.TabIndex = 1;
             this.emailLabel.TabStop = true;
             this.emailLabel.Text = "E-mail: natequan@hotmail.com";
+            this.emailLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.emailLabel_LinkClicked);
             // 
             // titleLabel
             // 

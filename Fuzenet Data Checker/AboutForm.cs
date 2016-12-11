@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Fuzenet_Data_Checker
 {
@@ -15,6 +9,18 @@ namespace Fuzenet_Data_Checker
         public AboutForm()
         {
             InitializeComponent();
+        }
+
+        private void HenryQuanBox_Click(object sender, EventArgs e)
+        {
+            // Goes to my github page
+            Process.Start("https://github.com/HenryQuan/Fuzenet-Data-Checker/");
+        }
+
+        private void emailLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Clipboard.SetText("natequan@hotmail.com");
+            MessageBox.Show("Copy to Clipboard.");
         }
     }
 }
