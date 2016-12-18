@@ -94,5 +94,29 @@ namespace Fuzenet_Data_Checker.Properties {
                 this["LastDataUsed"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LastestDate {
+            get {
+                return ((string)(this["LastestDate"]));
+            }
+            set {
+                this["LastestDate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int DataDifference {
+            get {
+                return ((int)(this["DataDifference"]));
+            }
+            set {
+                this["DataDifference"] = value;
+            }
+        }
     }
 }

@@ -45,8 +45,9 @@ namespace Fuzenet_Data_Checker
             // 
             this.internetUsageBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.internetUsageBar.Location = new System.Drawing.Point(0, 0);
+            this.internetUsageBar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.internetUsageBar.Name = "internetUsageBar";
-            this.internetUsageBar.Size = new System.Drawing.Size(358, 32);
+            this.internetUsageBar.Size = new System.Drawing.Size(716, 62);
             this.internetUsageBar.TabIndex = 2;
             // 
             // dataLabel
@@ -54,9 +55,10 @@ namespace Fuzenet_Data_Checker
             this.dataLabel.AutoSize = true;
             this.dataLabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataLabel.Location = new System.Drawing.Point(0, 32);
+            this.dataLabel.Location = new System.Drawing.Point(0, 62);
+            this.dataLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.dataLabel.Name = "dataLabel";
-            this.dataLabel.Size = new System.Drawing.Size(149, 16);
+            this.dataLabel.Size = new System.Drawing.Size(291, 30);
             this.dataLabel.TabIndex = 4;
             this.dataLabel.Text = "Used ??? MB of ??? MB";
             // 
@@ -66,9 +68,10 @@ namespace Fuzenet_Data_Checker
             this.percentageLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.percentageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.percentageLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.percentageLabel.Location = new System.Drawing.Point(162, 9);
+            this.percentageLabel.Location = new System.Drawing.Point(324, 17);
+            this.percentageLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.percentageLabel.Name = "percentageLabel";
-            this.percentageLabel.Size = new System.Drawing.Size(34, 16);
+            this.percentageLabel.Size = new System.Drawing.Size(64, 30);
             this.percentageLabel.TabIndex = 5;
             this.percentageLabel.Text = "??%";
             // 
@@ -76,9 +79,10 @@ namespace Fuzenet_Data_Checker
             // 
             this.increasedAmountLabel.AutoSize = true;
             this.increasedAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.increasedAmountLabel.Location = new System.Drawing.Point(0, 48);
+            this.increasedAmountLabel.Location = new System.Drawing.Point(0, 92);
+            this.increasedAmountLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.increasedAmountLabel.Name = "increasedAmountLabel";
-            this.increasedAmountLabel.Size = new System.Drawing.Size(64, 15);
+            this.increasedAmountLabel.Size = new System.Drawing.Size(117, 29);
             this.increasedAmountLabel.TabIndex = 6;
             this.increasedAmountLabel.Text = "+???? MB";
             // 
@@ -86,9 +90,10 @@ namespace Fuzenet_Data_Checker
             // 
             this.webBtn.BackgroundImage = global::Fuzenet_Data_Checker.Properties.Resources.web;
             this.webBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.webBtn.Location = new System.Drawing.Point(241, 32);
+            this.webBtn.Location = new System.Drawing.Point(482, 62);
+            this.webBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.webBtn.Name = "webBtn";
-            this.webBtn.Size = new System.Drawing.Size(35, 35);
+            this.webBtn.Size = new System.Drawing.Size(70, 67);
             this.webBtn.TabIndex = 8;
             this.webBtn.UseVisualStyleBackColor = true;
             this.webBtn.Click += new System.EventHandler(this.webBtn_Click);
@@ -97,9 +102,10 @@ namespace Fuzenet_Data_Checker
             // 
             this.aboutBtn.BackgroundImage = global::Fuzenet_Data_Checker.Properties.Resources.information;
             this.aboutBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.aboutBtn.Location = new System.Drawing.Point(323, 32);
+            this.aboutBtn.Location = new System.Drawing.Point(646, 62);
+            this.aboutBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.aboutBtn.Name = "aboutBtn";
-            this.aboutBtn.Size = new System.Drawing.Size(35, 35);
+            this.aboutBtn.Size = new System.Drawing.Size(70, 67);
             this.aboutBtn.TabIndex = 7;
             this.aboutBtn.UseVisualStyleBackColor = true;
             this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
@@ -108,9 +114,10 @@ namespace Fuzenet_Data_Checker
             // 
             this.settingsBtn.BackgroundImage = global::Fuzenet_Data_Checker.Properties.Resources.Settings;
             this.settingsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.settingsBtn.Location = new System.Drawing.Point(282, 32);
+            this.settingsBtn.Location = new System.Drawing.Point(564, 62);
+            this.settingsBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.settingsBtn.Name = "settingsBtn";
-            this.settingsBtn.Size = new System.Drawing.Size(35, 35);
+            this.settingsBtn.Size = new System.Drawing.Size(70, 67);
             this.settingsBtn.TabIndex = 9;
             this.settingsBtn.UseVisualStyleBackColor = true;
             this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
@@ -118,9 +125,9 @@ namespace Fuzenet_Data_Checker
             // Fuzenet
             // 
             this.AcceptButton = this.aboutBtn;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 68);
+            this.ClientSize = new System.Drawing.Size(716, 131);
             this.Controls.Add(this.webBtn);
             this.Controls.Add(this.aboutBtn);
             this.Controls.Add(this.increasedAmountLabel);
@@ -130,6 +137,7 @@ namespace Fuzenet_Data_Checker
             this.Controls.Add(this.internetUsageBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Fuzenet";

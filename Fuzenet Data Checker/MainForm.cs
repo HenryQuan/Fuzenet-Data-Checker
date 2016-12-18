@@ -32,6 +32,22 @@ namespace Fuzenet_Data_Checker
             string username = Settings.Default["UserName"].ToString();
             string password = Settings.Default["Password"].ToString();
 
+            bool isSameDate = false;
+            string lastestDate = Settings.Default["LastestDate"].ToString();
+            if (lastestDate == string.Empty)
+            {
+                // Setup this settings for the first time
+                Settings.Default["LastestDate"] = DateTime.Today.ToString();
+            }
+            else
+            {
+                // Check if it is the same date
+                if (lastestDate == DateTime.Today.ToString())
+                {
+                    isSameDate = true;
+                }
+            }
+
             string webData = postData.canLogin(username, password);
             if (webData != "")
             {
@@ -47,6 +63,14 @@ namespace Fuzenet_Data_Checker
                 else
                 {
                     dataDifference = Convert.ToInt32(dataUsed) - (int)Settings.Default["LastDataUsed"];
+                    if (isSameDate)
+                    {
+                        dataDifference = Convert.ToInt32(Settings.Default["DataDifference"]);
+                    }
+                    else
+                    {
+                        Settings.Default["DataDifference"] = dataDifference;
+                    }
                     Settings.Default["LastDataUsed"] = Convert.ToInt32(dataUsed);
                 }
 
@@ -80,7 +104,8 @@ namespace Fuzenet_Data_Checker
             {
                 // Have to reset username and password if somehow they are wrong
                 MessageBox.Show("Please reset your username and password", "Warming", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                Settings.Default.Reset();
+                Settings.Default["Password"] = "";
+                Application.ExitThread();
                 Application.Restart();
             }
         }
