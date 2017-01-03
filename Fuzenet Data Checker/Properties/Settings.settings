@@ -8,9 +8,6 @@
     <Setting Name="Password" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="SimpleUI" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="FirstLaunch" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
@@ -20,8 +17,8 @@
     <Setting Name="LastDataUsed" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="LastestDate" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="LastestDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">1990-01-01</Value>
     </Setting>
     <Setting Name="DataDifference" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>

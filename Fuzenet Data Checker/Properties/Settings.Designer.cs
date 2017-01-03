@@ -49,18 +49,6 @@ namespace Fuzenet_Data_Checker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SimpleUI {
-            get {
-                return ((bool)(this["SimpleUI"]));
-            }
-            set {
-                this["SimpleUI"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool FirstLaunch {
             get {
@@ -97,10 +85,10 @@ namespace Fuzenet_Data_Checker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string LastestDate {
+        [global::System.Configuration.DefaultSettingValueAttribute("1990-01-01")]
+        public global::System.DateTime LastestDate {
             get {
-                return ((string)(this["LastestDate"]));
+                return ((global::System.DateTime)(this["LastestDate"]));
             }
             set {
                 this["LastestDate"] = value;

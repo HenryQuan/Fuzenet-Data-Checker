@@ -67,6 +67,7 @@ namespace Fuzenet_Data_Checker
                 }
                 else
                 {
+                    passwordBox.Text = "";
                     MessageBox.Show("Password or Username is not correct");
                 }
             }
