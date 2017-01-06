@@ -31,6 +31,7 @@ namespace Fuzenet_Data_Checker
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fuzenet));
             this.internetUsageBar = new System.Windows.Forms.ProgressBar();
             this.dataLabel = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@ namespace Fuzenet_Data_Checker
             this.webBtn = new System.Windows.Forms.Button();
             this.aboutBtn = new System.Windows.Forms.Button();
             this.settingsBtn = new System.Windows.Forms.Button();
+            this.closeApplicationTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // internetUsageBar
@@ -115,6 +117,11 @@ namespace Fuzenet_Data_Checker
             this.settingsBtn.UseVisualStyleBackColor = true;
             this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
             // 
+            // closeApplicationTimer
+            // 
+            this.closeApplicationTimer.Interval = 15000;
+            this.closeApplicationTimer.Tick += new System.EventHandler(this.closeApplicationTimer_Tick);
+            // 
             // Fuzenet
             // 
             this.AcceptButton = this.aboutBtn;
@@ -148,6 +155,7 @@ namespace Fuzenet_Data_Checker
         private Label increasedAmountLabel;
         private Button aboutBtn;
         private Button webBtn;
+        private Timer closeApplicationTimer;
     }
 }
 

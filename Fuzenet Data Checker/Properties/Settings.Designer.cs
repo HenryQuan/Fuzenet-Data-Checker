@@ -106,5 +106,17 @@ namespace Fuzenet_Data_Checker.Properties {
                 this["DataDifference"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WindowsStartup {
+            get {
+                return ((bool)(this["WindowsStartup"]));
+            }
+            set {
+                this["WindowsStartup"] = value;
+            }
+        }
     }
 }

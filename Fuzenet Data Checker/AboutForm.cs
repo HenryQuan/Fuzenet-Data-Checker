@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace Fuzenet_Data_Checker
 {
@@ -20,7 +20,7 @@ namespace Fuzenet_Data_Checker
         private void emailLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Clipboard.SetText("natequan@hotmail.com");
-            MessageBox.Show("Copy to Clipboard.");
+            MessageBox.Show("Copied to Clipboard.");
         }
     }
 }

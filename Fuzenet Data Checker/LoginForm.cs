@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Diagnostics;
+using System.Windows.Forms;
 using Fuzenet_Data_Checker.Properties;
 
 namespace Fuzenet_Data_Checker
@@ -11,8 +11,9 @@ namespace Fuzenet_Data_Checker
         {
             InitializeComponent();
 
-            bool doSavePassword = Convert.ToBoolean(Settings.Default["SavePassword"]);
-            if (doSavePassword) { savePwdCheckBox.Checked = true; }
+            var doSavePassword = Convert.ToBoolean(Settings.Default["SavePassword"]);
+            if (doSavePassword)
+                savePwdCheckBox.Checked = true;
 
             usernameBox.Text = Settings.Default["UserName"].ToString();
             passwordBox.Text = Settings.Default["Password"].ToString();
@@ -25,17 +26,20 @@ namespace Fuzenet_Data_Checker
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            string username = usernameBox.Text;
-            string password = passwordBox.Text;
+            var username = usernameBox.Text;
+            var password = passwordBox.Text;
 
-            if ((username == String.Empty || String.IsNullOrWhiteSpace(username)) 
-                || (password == String.Empty || String.IsNullOrWhiteSpace(password))) {
-                MessageBox.Show(@"Please enter all information needed", @"Warning!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            if (username == string.Empty || string.IsNullOrWhiteSpace(username) || password == string.Empty ||
+                string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show(@"Please enter all information needed", @"Warning!", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
             }
             else
             {
                 // It return non-empty string
-                if (postData.canLogin(username, password) != "") {
+                if (postData.canLogin(username, password) != "")
+                {
                     // It takes me a long time to be here
                     MessageBox.Show("Login successfully!");
 
@@ -60,7 +64,7 @@ namespace Fuzenet_Data_Checker
                     // Dont have to open a new MainForm if it is not FirstLaunch
                     if (!Convert.ToBoolean(Settings.Default["FirstLaunch"]))
                     {
-                        Fuzenet newForm = new Fuzenet();
+                        var newForm = new Fuzenet();
                         newForm.Show();
                         Hide();
                     }
@@ -71,7 +75,6 @@ namespace Fuzenet_Data_Checker
                     MessageBox.Show("Password or Username is not correct");
                 }
             }
-            
         }
     }
 }
