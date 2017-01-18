@@ -100,7 +100,11 @@ namespace Fuzenet_Data_Checker
                 }
 
                 // Only show 2 - 3 decimal
-                percentageLabel.Text = percentageUsed.ToString().Substring(0, 5) + "%";
+                var percentageString = percentageUsed.ToString();
+                // Sometimes, it is a whole number... There was a problem here
+                if (percentageString.Length > 5)
+                    percentageString = percentageString.Substring(0, 5); 
+                percentageLabel.Text = percentageString + "%";
 
                 #endregion
 

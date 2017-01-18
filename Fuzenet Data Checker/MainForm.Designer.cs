@@ -78,7 +78,7 @@ namespace Fuzenet_Data_Checker
             // 
             this.increasedAmountLabel.AutoSize = true;
             this.increasedAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.increasedAmountLabel.Location = new System.Drawing.Point(0, 48);
+            this.increasedAmountLabel.Location = new System.Drawing.Point(2, 51);
             this.increasedAmountLabel.Name = "increasedAmountLabel";
             this.increasedAmountLabel.Size = new System.Drawing.Size(64, 15);
             this.increasedAmountLabel.TabIndex = 6;
@@ -86,6 +86,7 @@ namespace Fuzenet_Data_Checker
             // 
             // webBtn
             // 
+            this.webBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.webBtn.BackgroundImage = global::Fuzenet_Data_Checker.Properties.Resources.web;
             this.webBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.webBtn.Location = new System.Drawing.Point(241, 32);
@@ -97,6 +98,7 @@ namespace Fuzenet_Data_Checker
             // 
             // aboutBtn
             // 
+            this.aboutBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.aboutBtn.BackgroundImage = global::Fuzenet_Data_Checker.Properties.Resources.information;
             this.aboutBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.aboutBtn.Location = new System.Drawing.Point(323, 32);
@@ -108,6 +110,7 @@ namespace Fuzenet_Data_Checker
             // 
             // settingsBtn
             // 
+            this.settingsBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsBtn.BackgroundImage = global::Fuzenet_Data_Checker.Properties.Resources.Settings;
             this.settingsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.settingsBtn.Location = new System.Drawing.Point(282, 32);
@@ -125,8 +128,8 @@ namespace Fuzenet_Data_Checker
             // Fuzenet
             // 
             this.AcceptButton = this.aboutBtn;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(358, 68);
             this.Controls.Add(this.webBtn);
             this.Controls.Add(this.aboutBtn);
